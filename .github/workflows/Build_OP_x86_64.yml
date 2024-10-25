@@ -27,6 +27,7 @@ jobs:
         set +e
         docker rmi `docker images -q`
         echo "Deleting files, please wait ..."
+        rm -rf /opt/hostedtoolcache
         sudo rm -rf \
           /usr/share/dotnet \
           /etc/mysql \
